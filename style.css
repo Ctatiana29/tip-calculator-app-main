@@ -14,7 +14,7 @@ body{
     margin-bottom: 2.3rem;
 }
 
-.tip.calculator{
+.tip-calculator{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body{
     border-radius: 1.4rem 1.4rem 0 0;
 }
 
-lable{
+label{
     color: hsl(186, 14%, 43%);
     font-family: 700;
     margin-bottom: 0.3rem;
@@ -129,5 +129,63 @@ input{
 
 .error{
     color: red;
-    
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    input{
+        width: 415px;
+        padding: 9px;
+        background-position: 17px 18px;
+    }
+    .tip-calculator {
+        width: 998px;
+        flex-direction: row;
+        border-radius: 1.4rem;
+        padding: 2.3rem;
+        height: 479px;
+    }
+    .portOne {
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .bill-input {
+        margin-bottom: 3.4rem;
+    }
+    .tip {
+        display: grid;
+        grid-template-columns: 135px 135px 135px; /* Corrección aquí */
+        row-gap: 1.2rem;
+        column-gap: 17px;
+        margin-bottom: 3.2rem;
+    }
+    .tips {
+        height: 59px;
+    }
+
+    .result{
+        margin-left:auto;
+        width: 400px;
+        display: flex;
+        flex-direction:column;
+        align-content:space-between;
+        padding: 48px 38px;
+
+    }
+    .amount{
+        font-size: 55px;
+
+    }
+    .reset{
+        padding: 13px 0 13px 0;
+        margin-top: auto;
+    }
 }
